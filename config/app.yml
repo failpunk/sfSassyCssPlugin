@@ -2,9 +2,9 @@ all:
   sfSassyCssPlugin:
     enabled:          false               # Wether to trigger sass compilation
     input_dir:        %SF_DATA_DIR%/sass  # Sass source folder
-    output_dir:       %SF_WEB_DIR%/css    # Target folder where to generate the files
+    output_dir:       %SF_WEB_DIR%/css/sass    # Target folder where to generate the files
     format:           scss                # Input format: scss, sass
-    include_dirs:     []                  # Array of sass import path.
+    include_dirs:     [ frontend, backend ]                  # Array of sass import path.
     cache:            true                # Wether to use the cache
     cache_dir:        %SF_CACHE_DIR%/sass # The path to put cached Sass files
     trace:            false               # Show a full traceback on error
@@ -13,7 +13,7 @@ all:
     line_numbers:     false               # Emit comments in the generated CSS indicating the corresponding sass line.
     line_comments:    false
     toolbar:          false               # Wether to display the debug toolbar
-    encoding:         null                # Sass files default encoding ( Only supported for legacy Ruby versions. If you are using Ruby 1.9 or later, Sass will implicitly set this. )
+    encoding:         null               # Sass files default encoding ( Only supported for legacy Ruby versions. If you are using Ruby 1.9 or later, Sass will implicitly set this. )
 
 dev:
   sfSassyCssPlugin:
