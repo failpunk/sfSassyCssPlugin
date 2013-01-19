@@ -20,3 +20,4 @@ dev:
     enabled:          true                # Wether to trigger sass compilation
     style:            expanded            # Output style: nested, compact, compressed, or expanded.
     toolbar:          true                # Wether to display the debug toolbar
+    debug_info:       true                # Emit extra information in the generated CSS that can be used by the FireSass Firebug plugin.
